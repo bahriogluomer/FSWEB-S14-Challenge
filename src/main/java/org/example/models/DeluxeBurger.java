@@ -12,7 +12,7 @@ public class DeluxeBurger extends Hamburger {
         return drink;
     }
     public DeluxeBurger() {
-        super("Deluxe", "Beef", 19.10, "SANDWICH");
+        super("Deluxe Burger", "Double", 19.10, "Double Sandwich");
         this.cips = "CURVY";
         this.drink = "COKE";
     }
@@ -40,7 +40,7 @@ public class DeluxeBurger extends Hamburger {
 
     @Override
     public double itemizeHamburger() {
-        System.out.println(super.itemizeHamburger() + "\nCips: " + this.cips + "\nDrink: " + this.drink);
+        System.out.println(super.itemizeHamburger());
         return getPrice();
     }
 

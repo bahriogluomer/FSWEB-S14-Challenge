@@ -76,11 +76,9 @@ public class Hamburger {
         this.price += this.addition2Price;
         this.price += this.addition3Price;
         this.price += this.addition4Price;
-        System.out.println(this.addition1Name);
-        System.out.println(this.addition2Name);
-        System.out.println(this.addition3Name);
-        System.out.println(this.addition4Name);
-        return this.price;
 
+
+        System.out.println("Name: " + getName() + "\n" + "Meat: " + getMeat() + "\n" + "Bread roll type: " + getBreadRollType() + "\n" + "Price: " + getPrice());
+        return getPrice();
     }
 }

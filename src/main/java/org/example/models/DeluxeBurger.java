@@ -11,7 +11,7 @@ public class DeluxeBurger extends Hamburger {
     public String getDrink() {
         return drink;
     }
-    public DeluxeBurger( ) {
+    public DeluxeBurger() {
         super("Deluxe", "Beef", 19.10, "SANDWICH");
         this.cips = "CURVY";
         this.drink = "COKE";
@@ -40,6 +40,7 @@ public class DeluxeBurger extends Hamburger {
 
     @Override
     public double itemizeHamburger() {
+        System.out.println(super.itemizeHamburger() + "\nCips: " + this.cips + "\nDrink: " + this.drink);
         return getPrice();
     }
 
